@@ -1,0 +1,3 @@
+sudo systemctl enable nodered.service
+cd /home/sijo/.node-red/
+npm i node-red-node-pi-gpio
