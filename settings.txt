@@ -1,0 +1,44 @@
+raspi-gpio funcs - to check uart ports
+
+dtoverlay -a | grep uart
+
+*// enable additional UART ports//*
+
+dtoverlay=uart2
+dtoverlay=uart3
+dtoverlay=uart4
+dtoverlay=uart5
+
+ls -l /dev/ttyA*
+
+aspi-gpio get 0-15 - to check GPIO status
+
+ls /dev/ttyAMA*
+
+*// I2C settings//*
+
+
+Run this command:
+
+sudo raspi-config
+Select Interfacing Options > I2C.
+
+
+Start Node-RED
+
+Once Node-RED has started, point a browser at http://192.168.1.64:1880
+On Pi Node-RED works better with the Firefox or Chrome browser
+
+Use   node-red-stop                          to stop Node-RED
+Use   node-red-start                         to start Node-RED again
+Use   node-red-log                           to view the recent log output
+Use   sudo systemctl enable nodered.service  to autostart Node-RED at every boot
+Use   sudo systemctl disable nodered.service to disable autostart on boot
+
+To find more nodes and example flows - go to http://flows.nodered.org
+
+Starting as a systemd service.
+
+go to node red directory =- 
+  cd /home/sijo/.node-red/
+
