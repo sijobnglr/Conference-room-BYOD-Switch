@@ -12,7 +12,7 @@ dtoverlay=uart5
 
 ls -l /dev/ttyA*
 
-aspi-gpio get 0-15 - to check GPIO status
+raspi-gpio get 0-15 - to check GPIO status
 
 ls /dev/ttyAMA*
 
