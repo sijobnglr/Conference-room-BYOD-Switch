@@ -3,6 +3,8 @@ raspi-gpio funcs - to check uart ports
 dtoverlay -a | grep uart
 
 sudo nano /boot/config.txt 
+sudo nano /boot/firmware/config.txt (for new os)
+
 *// enable additional UART ports//*
 enable_uart=1
 dtoverlay=uart2
