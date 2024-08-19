@@ -5,6 +5,12 @@ dtoverlay -a | grep uart
 sudo nano /boot/config.txt 
 sudo nano /boot/firmware/config.txt (for new os)
 
+*** // sudo sh -c 'echo "nable_uart=1
+dtoverlay=uart2
+dtoverlay=uart3
+dtoverlay=uart4
+dtoverlay=uart5" >> /boot/firmware/config.txt' //**
+
 *// enable additional UART ports//*
 enable_uart=1
 dtoverlay=uart2
